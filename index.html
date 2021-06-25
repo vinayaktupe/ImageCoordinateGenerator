@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<!-- Compiled and minified CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+		/>
+
+		<title>Image Co-ordinates</title>
+	</head>
+	<body>
+		<div class="">
+			<div class="row">
+				<div class="col s10 offset-s1">
+					<div class="card">
+						<div class="card-content">
+							<span class="card-title center">Image Co-ordinates Generator</span>
+							<form action="" class="form" id="form">
+								<div class="row">
+									<div class="col s6 offset-s3">
+										<div class="file-field input-field">
+											<div class="btn">
+												<span>File</span>
+												<input
+													type="file"
+													accept="image/*"
+													id="imgFile"
+													name="imgFile"
+													onchange="imgUpload"
+												/>
+											</div>
+											<div class="file-path-wrapper">
+												<input
+													class="file-path validate"
+													type="text"
+													placeholder="Upload Image File"
+												/>
+											</div>
+										</div>
+										<div class="col s12 center">OR</div>
+										<div class="input-field">
+											<input
+												type="text"
+												name="imgSource"
+												id="imgSource"
+												placeholder="Enter link of your image"
+											/>
+										</div>
+									</div>
+								</div>
+							</form>
+
+							<div class="row">
+								<div class="col s6 offset-s3">
+									<div class="row">
+										<div class="col s6">
+											<p>
+												X Co-ordinate:
+												<span id="xValue" class="flow-text">0</span>
+											</p>
+										</div>
+										<div class="col s6">
+											<p>
+												Y Co-ordinate:
+												<span id="yValue" class="flow-text">0</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s12 uploadedImg center" id="uploadedImgDiv"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="./app.js" defer></script>
+</html>
